@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zoli.szamologep.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button_egy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="25dp"
+        android:layout_above="@+id/button_negy"
+        android:layout_alignLeft="@+id/button_egyenlo"
+        android:layout_alignStart="@+id/button_egyenlo" />
+
+    <Button
+        android:id="@+id/button_ketto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="25dp"
+        android:layout_above="@+id/button_ot"
+        android:layout_alignLeft="@+id/button_kivonas"
+        android:layout_alignStart="@+id/button_kivonas" />
+
+    <Button
+        android:id="@+id/button_osszeadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="+"
+        android:layout_alignBaseline="@+id/button_egyenlo"
+        android:layout_alignBottom="@+id/button_egyenlo"
+        android:layout_alignLeft="@+id/button_kivonas"
+        android:layout_alignStart="@+id/button_kivonas" />
+
+    <Button
+        android:id="@+id/button_egyenlo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:textSize="25dp"
+        android:layout_marginTop="42dp"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_alignBaseline="@+id/button_osszeadas"
+        android:layout_alignBottom="@+id/button_osszeadas"
+        android:layout_alignLeft="@+id/button_harom"
+        android:textSize="25dp"
+        android:layout_alignStart="@+id/button_harom" />
+
+    <Button
+        android:id="@+id/button_harom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="25dp"
+        android:layout_above="@+id/button_hat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button_negy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_alignBaseline="@+id/button_ot"
+        android:layout_alignBottom="@+id/button_ot"
+        android:textSize="25dp"
+        android:layout_alignLeft="@+id/button_egy"
+        android:layout_alignStart="@+id/button_egy" />
+
+    <Button
+        android:id="@+id/button_ot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="25dp"
+        android:layout_above="@+id/button_nyolc"
+        android:layout_alignLeft="@+id/button_ketto"
+        android:layout_alignStart="@+id/button_ketto" />
+
+    <Button
+        android:id="@+id/button_hat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:layout_above="@+id/button_het"
+        android:layout_alignLeft="@+id/button_harom"
+        android:textSize="25dp"
+        android:layout_alignStart="@+id/button_harom" />
+
+    <Button
+        android:id="@+id/button_het"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:layout_alignBaseline="@+id/button_nyolc"
+        android:layout_alignBottom="@+id/button_nyolc"
+        android:layout_alignLeft="@+id/button_negy"
+        android:textSize="25dp"
+        android:layout_alignStart="@+id/button_negy" />
+
+    <Button
+        android:id="@+id/button_nyolc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/button_kilenc"
+        android:layout_alignBottom="@+id/button_kilenc"
+        android:layout_alignLeft="@+id/button_ot"
+        android:layout_alignStart="@+id/button_ot" />
+
+    <Button
+        android:id="@+id/button_kilenc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_hat"
+        android:layout_alignStart="@+id/button_hat"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/button_kivonas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_osszeadas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:textSize="25dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/button_osztas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_egyenlo"
+        android:layout_alignStart="@+id/button_egyenlo"
+        android:layout_alignTop="@+id/button_kivonas"
+        android:textSize="25dp"
+        android:text="÷" />
+
+    <Button
+        android:id="@+id/button_szorzas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="*"
+        android:layout_alignBaseline="@+id/button_kivonas"
+        android:layout_alignBottom="@+id/button_kivonas"
+        android:layout_alignRight="@+id/buttonC"
+        android:layout_alignEnd="@+id/buttonC" />
+</RelativeLayout>
