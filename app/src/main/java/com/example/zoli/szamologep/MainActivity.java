@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     private Button egy, ketto, osszead, egyenlo, harom, negy, ot, hat, het, nyolc, kilenc, kivonas, osztas, szorzas;
-    private int elso, masodik,vegeredmeny;
+    private int elso = 0, masodik,vegeredmeny;
     private int muvelet;
     private EditText kiiratas;
     private String szam ="";
@@ -101,37 +101,74 @@ public class MainActivity extends AppCompatActivity {
         osztas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                elso = Integer.parseInt(szam);
-                muvelet = 3;
-                szam = "";
-                kiiratas.setText(szam);
+                if (muvelet == 3)
+                {kiiratas.setText("Egyszer már megnyomtad!");
+                }
+                else if (szam == "")
+                {
+                    kiiratas.setText("Adj hozzá számot!");
+                }
+                else if (!szam.equals(3)) {
+                    elso = Integer.parseInt(szam);
+                    muvelet = 3;
+                    szam = "";
+                    kiiratas.setText(szam);
+                }
             }
         });
         osszead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                elso = Integer.parseInt(szam);
-                muvelet = 1;
-                szam = "";
-                kiiratas.setText(szam);
+                if (muvelet == 1)
+                {kiiratas.setText("Egyszer már megnyomtad!");
+                }
+                else if (szam == "")
+                {
+                    kiiratas.setText("Adj hozzá számot!");
+                }
+                else if (!szam.equals(1)) {
+                    elso = Integer.parseInt(szam);
+                    muvelet = 1;
+                    szam = "";
+                    kiiratas.setText(szam);
+                }
+
             }
         });
         kivonas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                elso = Integer.parseInt(szam);
-                muvelet = 2;
-                szam = "";
-                kiiratas.setText(szam);
+                if (muvelet == 2)
+                {kiiratas.setText("Egyszer már megnyomtad!");
+                }
+                else if (szam == "")
+                {
+                    kiiratas.setText("Adj hozzá számot!");
+                }
+                else if (!szam.equals(2)){
+                    elso = Integer.parseInt(szam);
+                    muvelet = 2;
+                    szam = "";
+                    kiiratas.setText(szam);
+                }
             }
         });
         szorzas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                elso = Integer.parseInt(szam);
-                muvelet = 4;
-                szam = "";
-                kiiratas.setText(szam);
+                if (muvelet == 4)
+                {kiiratas.setText("Egyszer már megnyomtad!");
+                }
+                else if (szam == "")
+                {
+                    kiiratas.setText("Adj hozzá számot!");
+                }
+                else if (!szam.equals(4) ){
+                    elso = Integer.parseInt(szam);
+                    muvelet = 4;
+                    szam = "";
+                    kiiratas.setText(szam);
+                }
             }
         });
         egyenlo.setOnClickListener(new View.OnClickListener() {
@@ -169,6 +206,7 @@ public class MainActivity extends AppCompatActivity {
                 vegeredmeny = 0;
                 elso = 0;
                 masodik = 0;
+                muvelet = 0;
                 szam="";
             }
         });
